@@ -1,0 +1,22 @@
+* {
+  display: border-box;
+}
+
+
+.grid {
+  width: 900px;
+}
+
+.grid > div {
+  background-color: white;
+  border: 1px solid black;
+  width: 20px;
+  height: 20px;
+  float: left;
+  margin: 0;
+}
+
+h2 {
+  margin: 0 5px;
+  display: inline-block;
+}

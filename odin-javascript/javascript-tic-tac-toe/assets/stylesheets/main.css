@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+.title {
+  text-align: center;
+  font-size: 40px;
+}
+
+.grid {
+  margin-left: 38%;
+}
+
+.grid > div {
+  float: left;
+  height: 150px;
+  width: 150px;
+  border: 1px solid black;
+  font-size: 100px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 150px;
+}
+
+.cell-4, .cell-7 {
+  clear: left;
+}
+
+.notifier {
+  padding-top: 15px;
+  clear: both;
+  text-align: center;
+}

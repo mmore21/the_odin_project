@@ -1,0 +1,39 @@
+.login {
+    margin-left: 42%;
+}
+
+.back_link {
+    float: left;
+    margin-left: 1%;
+}
+
+.user_table {
+    text-align: center;
+    border: 1px solid black;
+    margin-left: 37%;
+}
+
+.new_user_link {
+    float: right;
+    margin-right: 1%;
+}
+
+textarea {
+    resize: none;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+.text_field {
+    resize: none;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+input[type=text]:focus, textarea:focus {
+    box-shadow: 0 0 5px #2c4d82;
+}
+
+input[type=password]:focus {
+    box-shadow: 0 0 5px #2c4d82;
+}

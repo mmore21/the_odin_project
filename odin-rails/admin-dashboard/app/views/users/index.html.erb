@@ -1,0 +1,25 @@
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">User</th>
+      <th scope="col">Password</th>
+      <th scope="col">Email</th>
+      <th scope="col">Profile</th>
+      <th scope="col">Destroy</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @users.each do |user| %>
+    <tr>
+      <th><%= user.id %></th>
+      <th><%= user.name %></th>
+      <th><%= user.password_digest %></th>
+      <th><%= user.email %></th>
+      <th><%= link_to "View Profile", user %></th>
+      <th><%= link_to "Delete", user, method: :delete %></th>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+<p><%= link_to "Create a new user", new_user_path %></p>

@@ -1,0 +1,36 @@
+.container {
+  width: 50%;
+}
+
+.navbar {
+  margin-top: 25px;
+  box-sizing: content-box;
+  border-radius: 3px;
+  border: 1px solid lightgrey;
+  height: 50px;
+  text-align: center;
+  list-style: none;
+}
+
+.navbar > li {
+  width: 32.9%;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.navbar > li:hover {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.navbar > li:not(:last-child) {
+  border-right: 1px solid lightgrey;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}

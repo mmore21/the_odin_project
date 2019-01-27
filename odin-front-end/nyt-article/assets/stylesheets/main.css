@@ -1,0 +1,143 @@
+body {
+  box-sizing: border-box;
+  font-family: Times;
+}
+
+/* container */
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+  background-color: grey;
+  margin-bottom: 150px;
+}
+
+/* navbar */
+
+.navbar {
+  position: fixed;
+  width: inherit;
+  padding: 10px 0px;
+  background-color: red;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 40px;
+  z-index: 1;
+}
+
+.navbar > h1 {
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 30px;
+  margin: 0 30%;
+}
+
+.navbar > span {
+  display: inline-block;
+}
+
+.navbar > span:nth-child(-n+2) {
+  margin-right: 10px;
+}
+
+.navbar > span:nth-child(n-2) {
+  margin-left: 10px;
+}
+
+/* content */
+
+.content {
+  width: 70%;
+  margin: 0 auto;
+  top: 150px;
+  background-color: blue;
+  padding-top: 60px;
+}
+
+/* header */
+
+.header {
+  background-color: pink;
+  width: 100%;
+}
+
+.header > h1 {
+  font-size: 30px;
+  font-style: italic;
+  font-weight: bold;
+  border-bottom: 1px solid lightgrey;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.header > h2 {
+  border-top: 1px solid black;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-size: 12px;
+  padding-top: 5px;
+}
+
+.header > .float-clear > img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* body */
+
+.body {
+  background-color: purple;
+  width: 50%;
+  margin-left: 12.5%;
+}
+
+.body > p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+/* footer */
+
+.footer {
+  width: 75%;
+  background-color: green;
+  height: 150px;
+  margin: 0 auto;
+  border-top: 8px double lightgrey;
+}
+
+.footer > .left {
+  float: left;
+  width: 75%;
+  background-color: yellow;
+  height: 100%;
+  box-sizing: border-box;
+  border-right: 3px solid black;
+}
+
+.footer > .right {
+  float: right;
+  width: 25%;
+  background-color: violet;
+  height: 100%;
+}
+
+/* float */
+
+.float-left {
+  float: left;
+  margin-right: 10px;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-clear {
+  clear: both;
+}

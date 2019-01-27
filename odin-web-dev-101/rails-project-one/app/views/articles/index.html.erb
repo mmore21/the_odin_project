@@ -1,0 +1,18 @@
+<div class="container"><h2>All Articles</h2></div>
+
+<div class="article_body">
+<div class="article">
+<ul class="article_text">
+    <% @articles.each do |article| %>
+        <li>
+            <p><%= link_to article.title, article_path(article), class: "article_title" %></p>
+            <p class="article_description"><%= truncate(article.body, length: 150, separator: ' ') %>
+            <p class="article_time"><%= article.created_at.strftime("Created %B %d, %Y at %l:%M%P") %></p>
+        </li>
+        <% if article != @articles.last %>
+            <hr>
+        <% end %>
+    <% end %>
+</ul>
+</div>
+</div>

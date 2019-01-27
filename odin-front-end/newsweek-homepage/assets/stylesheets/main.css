@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+/* variables */
+/* mixins */
+/* essentials */
+body {
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif; }
+
+p {
+  font-family: Georgia, Times, serif;
+  font-size: 1.25em;
+  text-align: center; }
+
+h1, h2, h3, h4 {
+  text-align: center;
+  margin-top: 10px; }
+
+h1 {
+  font-weight: bold; }
+
+h2 {
+  font-weight: bold;
+  color: #FF0500;
+  font-size: 22px;
+  text-transform: uppercase; }
+
+h3 {
+  font-weight: bold; }
+
+h4 {
+  font-weight: bold;
+  color: #FF0500;
+  font-size: 16px;
+  text-transform: uppercase; }
+
+img {
+  width: 100%;
+  height: auto; }
+
+li {
+  list-style-type: square; }
+
+.container {
+  margin-top: 50px; }
+
+/* navbar */
+.navbar {
+  width: 100%;
+  background-color: black; }
+
+.nav li a, .navbar-nav li a {
+  text-transform: uppercase; }
+
+.navbar-inverse, .navbar-collapse {
+  background-color: black;
+  border-bottom: 1px solid white; }
+
+.navbar-right {
+  margin-right: 15px; }
+
+.main {
+  margin-bottom: 25px; }
+  .main li {
+    text-align: center; }
+
+.secondary li {
+  text-align: center; }
+
+/* in the magazine */
+.in-the-mag {
+  font-size: 19px;
+  font-family: Georgia, Times, serif;
+  font-weight: normal;
+  margin-bottom: 0; }
+
+.in-the-mag-divider {
+  border-bottom: 3px solid #FF0500;
+  margin-bottom: 20px; }
+
+/* big shots */
+.big-shots {
+  background-color: #282828; }
+  .big-shots .container {
+    margin-bottom: 50px; }
+
+.most-read {
+  border-left: 1px solid lightgrey;
+  padding-left: 2.5%; }
+  .most-read h3 {
+    text-align: left;
+    border-bottom: 5px solid #FF0500; }
+  .most-read ul {
+    padding-left: 0; }
+    .most-read ul li {
+      list-style: none;
+      clear: both;
+      margin-top: 10px; }
+      .most-read ul li img {
+        width: 40%;
+        float: left;
+        margin-bottom: 10px;
+        margin-right: 2.5%; }
+      .most-read ul li span {
+        float: right;
+        width: 57.5%; }
+
+/* footer */
+.footer {
+  background-color: #181818;
+  border-top: 5px solid #FF0500;
+  margin-top: 50px;
+  padding-bottom: 50px; }
+  .footer ul {
+    padding-left: 0; }
+    .footer ul li {
+      list-style-type: none; }
+  .footer .links ul li {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px; }
+  .footer .issues div li {
+    color: white;
+    font-weight: bold;
+    margin: 10px 0; }
+  .footer .issues div ul li {
+    font-weight: normal;
+    color: grey;
+    margin-bottom: 5px;
+    margin-top: 0; }
+  .footer .footer-button {
+    margin-top: 15px; }
+
+/*# sourceMappingURL=main.css.map */

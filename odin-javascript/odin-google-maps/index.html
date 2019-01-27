@@ -1,0 +1,30 @@
+<html>
+<head>
+  <title>Odin Google Maps API</title>
+  <meta charset="utf-8">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="assets/stylesheets/main.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header well">
+      <h1>Odin Google Maps API</h1>
+      <form class="form">
+        <label for="latitude">Latitude: </label>
+        <input name="latitude" type="number" min="-90" max="90" step="0.1" placeholder="-90 to 90" required></input>
+        <label for="longitutde">Longitutde: </label>
+        <input name="longitude" type="number" min="-180" max="180" step="0.1" placeholder="-180 to 180" required></input>
+        <label for="message">Message: </label>
+        <input name="message" type="text" placeholder="Optional"></input>
+        <br>
+        <input class="btn btn-success btn-block" id="submit" type="submit" value="Place Marker">
+      </form>
+      <button class="clear btn btn-danger btn-block">Clear Markers</button>
+    </div>
+    <div id="map"></div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="assets/scripts/main.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?libraries=drawing,geometry&key=AIzaSyC1aZFeo2KA49RLMsI6mV_hMUqohLn5zFs&callback=initMap" async defer></script>
+</body>
+</html>

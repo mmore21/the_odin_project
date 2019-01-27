@@ -1,0 +1,76 @@
+// Place all the styles related to the articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.article_body {
+    margin: 0 3em 4em 3em;
+}
+
+.article {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.article_text{
+    width: 50%;
+    margin: 0 auto;
+    list-style-type: none;
+}
+
+.article_date {
+    font-size: 1em;
+    font-style: italic;
+    color: #babbbc;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    width: 100%;
+    top: 148px;
+}
+
+.article_link {
+    color: #1b1818;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+.article_link:hover {
+    color: #223b63;
+}
+
+.article_link_back {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 30%;
+}
+
+.button {
+    padding: 10px;
+    margin-right: 5px;
+    background-color: #1b1818;
+    color: white;
+    border-radius: 5px;
+}
+
+.button:hover {
+    color: lightblue;
+}
+
+.article_time {
+    font-size: 16px;
+    font-style: italic;
+    color: grey;
+}
+
+.article_description {
+    font-size: 18px;
+    color: black;
+}
+
+.article_title {
+    font-size: 35px;
+    font-weight: bold;
+    color: #2c4d82;
+}

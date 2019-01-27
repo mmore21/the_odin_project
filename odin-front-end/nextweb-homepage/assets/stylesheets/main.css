@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, serif;
+  background-color: #fcfcfc;
+}
+
+h1 {
+  color: #ff4f1e;
+  margin-left: 8px;
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.container {
+
+}
+
+/* navbar */
+
+.navbar {
+
+}
+
+.nav-1 {
+  background-color: #131313;
+  height: 32px;
+  height: 4.3%;
+  min-height: 32px;
+}
+
+#nav-logo {
+  display: none;
+  background-color: #d1145d;
+  height: 48px;
+  width: 106px;
+}
+
+#nav-logo > img {
+  width: 85px;
+  height: auto;
+  padding: 16px 0 0 22px;
+}
+
+.nav-1 > ul {
+  height: inherit;
+  margin-left: 8px;
+}
+
+.nav-1 > ul > li {
+  display: inline-block;
+  color: rgba(255,255,255,.6);
+  vertical-align: middle;
+  line-height: 32px;
+  margin-left: 12px;
+}
+
+.nav-1 > ul > li:nth-child(-n+7) {
+  float: left;
+  }
+
+.nav-1 > ul > li:nth-last-child(-n+5) {
+  float: right;
+}
+
+.nav-1 > ul > li:nth-child(8) {
+  margin-right: 10px;
+}
+
+.nav-1 > ul > li:hover {
+  color: white;
+}
+
+.nav-2 {
+  clear: both;
+  background-color: white;
+  height: 48px;
+  box-shadow: 1px 1px 5px lightgrey;
+}
+
+.nav-2 > ul {
+  margin-left: 8px;
+}
+
+.nav-2 > ul > li {
+  display: inline-block;
+  line-height: 48px;
+  vertical-align: middle;
+  margin-left: 12px;
+  color: #AAA;
+}
+
+/* popular */
+
+.popular {
+  font-family: 'Alegreya Sans', sans-serif;
+  margin: 0px 10px;
+  margin-top: 10px;
+}
+
+.main-article {
+  background-color: green;
+  float: left;
+  width: 66%;
+  height: 544px;
+}
+
+.side-article-1 {
+  background-color: blue;
+  float: right;
+  width: 33.5%;
+  height: 267px;
+  margin-bottom: 10px;
+}
+
+.side-article-2 {
+  background-color: red;
+  float: right;
+  width: 33.5%;
+  height: 267px;
+}
+
+/* news */
+
+.news {
+  font-family: 'Alegreya Sans', sans-serif;
+  clear: both;
+  margin: 0 auto;
+  width: 60%;
+  padding-top: 40px;
+}
+
+.news > div {
+  width: 23%;
+  height: 135px;
+  background-color: grey;
+  float: left;
+  display: inline-block;
+  margin: 1%;
+}
+
+/* funding */
+
+.funding {
+  font-family: 'Alegreya Sans', sans-serif;
+}
+
+/* topics */
+
+.topics {
+  font-family: 'Alegreya Sans', sans-serif;
+}
+
+.topics > div {
+  width: 31.33%;
+  height: 135px;
+  background-color: grey;
+  float: left;
+  display: inline-block;
+  margin-left: 1%;
+}
+
+/* deals */
+
+.deals {
+  font-family: 'Alegreya Sans', sans-serif;
+}
+
+/* footer */
+
+.footer {
+  font-size: 13px;
+  margin-top: 50px;
+  background-color: rgb(19, 19, 19);
+}
+
+.columns {
+  color: white;
+  height: 400px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.columns > div {
+  margin-top: 40px;
+  display: inline-block;
+  vertical-align: top;
+  line-height: 100%;
+  margin-right: 20%;
+}
+
+.columns > div > h2 {
+  color: #aaa;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.columns > div > ul > li {
+  margin-bottom: 10px;
+}
+
+.footer-date {
+  color: #515151;
+}
+
+.links {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.links > ul {
+  margin-top: 120px;
+  text-align: center;
+}
+
+.links > ul > li {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #aaa;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.credits {
+  background-color: black;
+  height: 100px;
+}
+
+.credits > p {
+  color: #aaa;
+  line-height: 100px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.credits > p > img {
+  display: inline;
+  height: 10px;
+  width: auto;
+}
+
+.credits > p > span {
+  color: red;
+}
+
+/* media screens */
+
+@media only screen and (max-width: 1024px) {
+  .news > div {
+    width: 31%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-1 {
+    display: none;
+  }
+
+  .nav-2 > ul{
+    visibility: hidden;
+  }
+
+  #nav-logo {
+    display: inline-block;
+  }
+
+  .news {
+    width: 95%;
+  }
+
+  .news > div {
+    width: 100%;
+  }
+
+  .popular > div {
+    height: 230px;
+    margin-bottom: 10px;
+  }
+
+  .main-article {
+    float: none;
+    width: 100%;
+  }
+
+  .side-article-1 {
+    float: none;
+    width: 100%;
+  }
+
+  .side-article-2 {
+    float: none;
+    width: 100%;
+  }
+}

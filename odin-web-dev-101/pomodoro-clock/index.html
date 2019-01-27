@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pomdoro Clock</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="scripts/script.js"></script>
+</head>
+
+<body>
+<div class="container">
+    <div class="title_wrapper">
+        <h1>Pomdoro Clock
+        <a href="https://github.com/mmore21/pomodoro-clock"><img class = "logo_wrapper" src="images/github_logo.png"></a></h1>
+        <h1 id="description"><a href="http://www.theodinproject.com/courses/web-development-101/lessons/pairing-project">Project for The Odin Project</h1></a>
+    </div>
+
+    <div class="interval_wrapper">
+        <div class="left_interval">
+            <p><button id="session">Session</button></p>
+        </div>
+        <div class="right_interval">
+            <p><button id="break">Break</button></p>
+        </div>
+    </div>
+
+    <div class="timer_wrapper">
+        <p id="timer"></p>
+        <div class="left_button">
+        <button id="start_timer">Start</button>
+        <button id="add_time">+1:00</button>
+        </div>
+        <div class="right_button">
+        <button id="subtract_time">-1:00</button>
+        <button id="stop_timer">Stop</button></a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

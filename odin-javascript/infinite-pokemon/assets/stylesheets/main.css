@@ -1,0 +1,24 @@
+.container {
+  width: 25%;
+  margin-top: 50px;
+  text-align: center;
+  background-color: #ededed;
+  padding: 30px 50px 15px 50px;
+  border-radius: 10px;
+}
+
+label {
+  margin: 10px 0 20px 0;
+}
+
+input {
+  margin-bottom: 10px;
+}
+
+button {
+  margin-bottom: 15px;
+}
+
+.name {
+  text-transform: capitalize;
+}

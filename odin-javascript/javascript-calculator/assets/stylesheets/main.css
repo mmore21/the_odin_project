@@ -1,0 +1,42 @@
+.container {
+  margin-left: 27.5%;
+  margin-bottom: 0;
+}
+
+h1 {
+  margin: 0 auto;
+  margin-top: 32.5px;
+}
+
+.about {
+  position: relative;
+  left: -27.5%;
+  top: 125px;
+}
+
+.about > ul {
+  list-style-type: square;
+}
+
+.calc-buttons > .row > div {
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.calc-buttons > .row > div:hover {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.calc-buttons > .row > div:first-child {
+  cursor: default;
+}
+
+/* screen */
+
+.screen {
+  height: 30px;
+  font-size: 30px;
+}

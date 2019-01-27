@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blogger</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= auto_discovery_link_tag :rss, articles_url(:format => :rss) %>
+  </head>
+
+  <body>
+    <%= image_tag("computer_background.jpg", :alt => "Blog Title Background", :class => "title_image") %>
+    <ul class="navbar">
+      <li class="float_left"><%= link_to 'Home', articles_path, :class => "navlink" %>
+      <% if logged_in? %>
+        <li class="float_right"><%= link_to "Logout", logout_path, :class => "navlink" %></li>
+        <li class="float_right"><%= link_to "New Article", new_article_path, :class => "navlink" %></li>
+        <li class="float_right"><%= link_to 'Manage Users', authors_path, :class => "navlink" %></li>
+      <% else %>
+        <li class="float_right"><%= link_to 'Login', login_path, :class => "navlink" %></li>
+      <% end %>
+      <li class="float_right"><%= link_to 'Tags', tags_path, :class => "navlink" %></li>
+      <li class="float_right"><%= link_to 'Articles', articles_path, :class => "navlink" %></li>
+    </ul>
+    
+    <p class="flash"><%= flash.notice %><p>
+    <div>
+      <%= yield %>
+      <br>
+      <div class="footer">
+      <hr>
+        <h6>
+          <% if logged_in? %>
+            <%= "Logged in as #{current_user.username} - " %>
+            <strong><%= link_to "Logout", logout_path %></strong>
+          <% else %>
+            <%= link_to "Login", login_path %>
+          <% end %>
+        </h6>
+        <a href='/articles.rss'><%= image_tag("rss_logo.png", :alt => "RSS Feed", class: "odin_logo") %></a>
+        <a href="https://github.com/mmore21"><%= image_tag("github_logo.png", :alt => "Go to the owner's GitHub", :class => "github_logo") %></a>
+        <a href="http://www.theodinproject.com"><%= image_tag("odin_logo.png", :alt => "Go to The Odin Project", :class => "odin_logo") %></a>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,1 @@
+This is a simple Pomodoro Clock made with HTML, CSS, and JavaScript/jQuery. This was made for the Odin Project.

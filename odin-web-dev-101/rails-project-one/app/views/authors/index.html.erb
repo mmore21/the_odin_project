@@ -1,0 +1,30 @@
+<div class="container"><h2>Users</h2></div>
+
+<p id="notice"><%= notice %></p>
+
+<table cellpadding="5" class="user_table">
+  <thead>
+    <tr>
+      <th>Username</th>
+      <th>Email</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @authors.each do |author| %>
+      <tr>
+        <td><%= author.username %></td>
+        <td><%= author.email %></td>
+        <td><%= link_to 'Show', author %>
+        <%= link_to 'Edit', edit_author_path(author) %>
+        <%= link_to 'Delete', author, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Back', articles_path, :class => "back_link button" %>
+<%= link_to 'New User', new_author_path, :class => "new_user_link button" %>

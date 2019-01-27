@@ -1,0 +1,35 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  text-align: center;
+  height: 100%;
+}
+
+.header {
+  width: 55%;
+  margin: 1.5% auto;
+}
+
+.header > h1 {
+  margin: 0 0 3% 0;
+}
+
+.form > input {
+  padding-left: 5px;
+}
+
+.btn-success {
+  margin-top: 1.5%;
+}
+
+#map {
+  margin: 0 auto;
+  height: 70%;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 2.5px;
+}

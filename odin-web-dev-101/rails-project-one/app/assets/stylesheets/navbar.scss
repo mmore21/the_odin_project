@@ -1,0 +1,96 @@
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+.navbar li {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+.navlink {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    text-shadow: 1px 1px slategrey;
+}
+
+.navlink:hover {
+    color: lightblue;
+}
+
+.float_left {
+    float: left;
+}
+
+.float_right {
+    float: right;
+}
+
+.footer {
+    background-color: lightgrey;
+    font-size: 14px;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    margin: 0;
+}
+
+.footer h6 {
+    font-weight: normal;
+    text-decoration: none;
+    margin: 18px 0px 20px 16px;
+    padding: 0;
+    font-size: 14px;
+    float: left;
+}
+
+.footer hr {
+    margin: 0;
+}
+
+.title_image {
+    width: 100%;
+    height: 225px;
+    margin: 0;
+    padding: 0;
+    top: 0px;
+    left: 0px;
+    opacity: 1.2;
+}
+
+.github_logo {
+    max-height: 50px;
+    max-width: 50px;
+    height: 40px;
+    width: 40px;
+    float: right;
+    padding: 0;
+    margin: 6px 16px 0px 0px;
+    opacity: 0.8;
+}
+
+.github_logo:hover {
+    opacity: 1;
+}
+
+.odin_logo {
+    height: 40px;
+    width: 40px;
+    float: right;
+    padding: 7px 10px 0px 0px;
+    opacity: 0.8;
+}
+
+.odin_logo:hover {
+    opacity: 1;
+}

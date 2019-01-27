@@ -1,0 +1,14 @@
+<div class="container"><h2>All Tags</h2></div>
+<div class="article_body">
+
+<ul class="tag">
+    <% @tag.each do |tag| %>
+        <li>
+            <%= link_to tag.name, tag_path(tag) %>
+        </li><br />
+    <% end %>
+</ul>
+
+<%= link_to 'Back to Articles', articles_path, :class => "button tag_button" %>
+
+</div>

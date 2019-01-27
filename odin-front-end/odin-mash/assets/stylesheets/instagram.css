@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Leckerli+One');
+
+body {
+  font-family: Helvetica,Arial,sans-serif;
+  background-color: #fafafa;
+}
+
+.box {
+  margin-top: 60px;
+}
+
+/* navbar */
+
+.nav {
+  background-color: #d10869;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-top: none;
+}
+
+.nav > p {
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 50px;
+  vertical-align: middle;
+  margin-left: 1%;
+}
+
+/* phone images */
+
+.images {
+  text-align: right;
+  margin-top: 60px;
+}
+
+.photo {
+  position: absolute;
+  top: 260px;
+  left: 34%;
+}
+
+/* sign-in */
+
+.sign-in-form {
+  background-color: white;
+  width: 63%;
+  height: 506px;
+  border-radius: 1px;
+  border: 1px solid #e6e6e6;
+  margin-bottom: 10px;
+  padding: 25px 30px;
+}
+
+.sign-in-form > h2 {
+  font-family: 'Leckerli One', cursive;
+  font-weight: normal;
+  text-align: center;
+}
+
+.sign-in-form > p {
+  text-align: center;
+}
+
+.description {
+  margin: 20px 0;
+  color: #999;
+  font-weight: 600;
+}
+
+.policies {
+  margin-top: 32px;
+  color: #999;
+}
+
+.sign-in-form > form > button {
+  margin-top: 5px;
+}
+
+.sign-in-form > form > input {
+  border-radius: 2px;
+  padding: 5px 10px;
+  border: 1px solid lightgrey;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.sign-in-button {
+  background-color: white;
+  width: 63%;
+  border-radius: 1px;
+  border: 1px solid #e6e6e6;
+  margin-bottom: 10px;
+}
+
+.sign-in-button > p {
+  text-align: center;
+  font-size: 14px;
+  padding: 21px 0;
+}
+
+.app > p {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-left: 25.5%;
+}
+
+.app > ul > li {
+  display: inline-block;
+}
+
+.app > ul > li > img {
+  height: 40px;
+  width: auto;
+}
+
+/* footer */
+
+footer {
+  padding: 0 5%;
+  margin-top: 120px;
+}
+
+footer > ul > li {
+  margin-right: 16px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #003569;
+  float: left;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+footer > ul > li:last-child {
+  color: #999;
+  float: right;
+  margin-right: 0;
+}

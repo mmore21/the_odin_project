@@ -1,0 +1,73 @@
+h2 {
+    font-weight: bold;
+    font-size: 40px;
+    color: #434444;
+    font-style: italic;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.header {
+    background-image: url("../images/wave2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 450px;
+}
+
+#nav {
+    padding-top: 25px;
+}
+
+#title {
+    font-size: 100px;
+    margin-top: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: white;
+    text-shadow: 1px 2px #434444;
+}
+
+.img-responsive {
+    width: 300px;
+    height: auto;
+    margin-top: 80px;
+    opacity: 1;
+}
+
+.img-responsive:hover {
+    opacity: 0.7;
+}
+
+.row {
+    margin-right: 0px;
+}
+
+#essential-label {
+    padding-left: 0px;
+}
+
+#leisure-label {
+    padding-right: 0px;
+}
+
+.netflix-logo {
+    height: 300px;
+    width: auto;
+}
+
+#github-logo {
+    height: 30px;
+    width: auto;
+}
+
+#github-logo:hover {
+    opacity: 0.6;
+}
+
+#github {
+    padding: 0;
+    margin: 10px 30px 0px 0px
+}

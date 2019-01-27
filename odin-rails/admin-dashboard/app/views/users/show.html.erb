@@ -1,0 +1,21 @@
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">User</th>
+      <th scope="col">Password</th>
+      <th scope="col">Email</th>
+      <th scope="col">Edit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th><%= @user.id %></th>
+      <th><%= @user.name %></th>
+      <th><%= @user.password_digest %></th>
+      <th><%= @user.email %></th>
+      <th><%= link_to "Edit User", edit_user_path %></th>
+    </tr>
+  </tbody>
+</table>
+<p><%= link_to "View all users", users_path %></p>

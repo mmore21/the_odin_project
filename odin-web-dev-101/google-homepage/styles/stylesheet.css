@@ -1,0 +1,131 @@
+/* Disclaimer: Sorry for sloppy CSS, new to CSS and poorly coded it. */
+
+/* main & whitespace */
+.homepage {
+  font-family: arial, sans-serif;
+  color: #222;
+  font-size: small;
+  width: 100%;
+  top: 0;
+}
+
+.div-align {
+  text-align: center;
+}
+
+
+/* Navbar */
+.navbar-text {
+  color: #343638;
+  font-size: 13px;
+  display: inline-block;
+  text-align: center;
+  padding: 6px 10px 0px 0px;
+}
+
+#navbar-image {
+  display: inline-block;
+  height: 30px;
+  vertical-align: middle;
+  padding-bottom: 5px;
+}
+
+#navbar-space {
+  right: 0px;
+  left: 0px;
+  margin-top: 10px;
+  margin-bottom: 170px;
+  text-align: right;
+}
+
+#navbar-format {
+  display: inline-block;
+  height: 100%;
+  line-height: 30px;
+  vertical-align: middle;
+}
+
+#navbar-button {
+  background-color: #4285f4;
+  padding: 6px 10px;
+  border-radius: 2px;
+  border: none;
+  font-family: arial, sans-serif;
+  font-weight: bold;
+  color: white;
+}
+
+/* Footer */
+.footer-text {
+  line-height: 40px;
+  color: #757575;
+  font-size: 13px;
+  padding-left: 27px;
+  margin: 0px;
+}
+
+#footer {
+  margin: 0;
+  position: absolute;
+  line-height: 40px;
+  background-color: #f6f6f6;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-top: 1px solid #e3e5e8;
+  vertical-align: middle;
+}
+
+#left {
+  text-align: left;
+
+}
+
+#right {
+  text-align: right;
+  float: right;
+}
+
+#special-setting {
+  padding-right: 27px;
+}
+
+/* Logo */
+#logo {
+  max-width: 300px;
+  max-height: auto;
+  margin-bottom: 24px;
+}
+
+
+/* Search Bar & Submit Buttons */
+#button-space {
+  padding: none;
+  margin-top: 30px;
+}
+
+#search {
+  border: 1px solid #c7ccd6;
+  border-radius: 0px;
+  width: 586px;
+  height: 36px;
+}
+
+#search-align {
+  display: block;
+  margin: auto;
+}
+
+#indiv-button {
+  border: 0px solid black;
+  border-radius: 0px;
+  background-color: #f2f2f2;
+  color: #757575;
+  font-size: 13px;
+  font-family: arial;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 14px 10px 14px;
+  margin-left: 2px;
+  margin-right: 2px;
+}

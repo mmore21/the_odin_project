@@ -1,0 +1,270 @@
+@import url("reset.css");
+
+* {
+  box-sizing: border-box;
+}
+
+/* inline text attributes */
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+.link {
+  text-decoration: none;
+  color: #3897f0;
+}
+
+/* navbar */
+
+.nav {
+  width: 100%;
+  height: 50px;
+  background-color: #efefef;
+  border-radius: 4px;
+  border: 1px solid lightgrey;
+}
+
+.nav > ul {
+  margin-left: 5%;
+}
+
+.nav > ul > li {
+  box-sizing: content-box;
+  display: inline-block;
+  line-height: 50px;
+  font-size: 18px;
+  border-right: 1px solid lightgrey;
+  padding-right: 1%;
+}
+
+.nav > ul > li:not(:first-child) {
+  margin-left: 1%;
+}
+
+.nav > ul > li > a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav > ul > li > a:hover {
+  color: grey;
+}
+
+.nav-inverse {
+  box-sizing: content-box;
+  width: 100%;
+  height: 50px;
+  background-color: #333;
+  border-radius: 4px;
+  border: 1px solid black;
+}
+
+.nav-inverse > ul {
+  margin-left: 5%;
+}
+
+.nav-inverse > ul > li {
+  display: inline-block;
+  line-height: 50px;
+  font-size: 18px;
+  border-right: 1px solid black;
+  padding-right: 1%;
+}
+
+.nav-inverse > ul > li:not(:first-child) {
+  margin-left: 1%;
+}
+
+.nav-inverse > ul > li > a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-inverse > ul > li > a:hover {
+  color: lightgrey;
+}
+
+/* 8-column grid system */
+
+.box {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.row {
+  width: 100%;
+  font-size: 0;
+}
+
+.row > * {
+  vertical-align: top;
+  font-size: 16px;
+  display: inline-block;
+}
+
+.row > .column-gap-1 {
+  margin-left: 12.75% !important;
+}
+
+.row > .column-gap-2 {
+  margin-left: 25.25% !important;
+}
+
+.row > .column-gap-3 {
+  margin-left: 37.75% !important;
+}
+
+.row > .column-gap-4 {
+  margin-left: 50.25% !important;
+}
+
+.row > .column-gap-5 {
+  margin-left: 62.75% !important;
+}
+
+.row > .column-gap-6 {
+  margin-left: 75.25% !important;
+}
+
+.row > .column-gap-7 {
+  margin-left: 87.75% !important;
+}
+
+.row > .column-1 {
+  width: 12%;
+  margin: 0 .25%;
+}
+
+.row > .column-2 {
+  width: 24.5%;
+  margin: 0 .25%;
+}
+
+.row > .column-3 {
+  width: 37%;
+  margin: 0 .25%;
+}
+
+.row > .column-4 {
+  width: 49.5%;
+  margin: 0 .25%;
+}
+
+.row > .column-5 {
+  width: 62%;
+  margin: 0 .25%;
+}
+
+.row > .column-6 {
+  width: 74.5%;
+  margin: 0 .25%;
+}
+
+.row > .column-7 {
+  width: 87%;
+  margin: 0 .25%;
+}
+
+.row > .column-8 {
+  width: 99.5%;
+  margin: 0 .25%;
+}
+
+/* headers */
+
+h1 {
+  font-size: 3.5em;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+h5 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+h6 {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+/* buttons */
+
+.btn {
+  display: block;
+  background-color: #777;
+  padding: 10px 30px;
+  font-weight: bold;
+  border-radius: 4px;
+  color: white;
+  border: none;
+}
+
+.btn-block {
+  width: 100%;
+}
+
+.btn-blue {
+  background-color: #0c67d6;
+}
+
+.btn-red {
+  background-color: #d60c0c;
+}
+
+.btn-green {
+  background-color: #11a035;
+}
+
+@media screen and (max-width: 720px) {
+    .row > div {
+      width: 100% !important;
+    }
+
+    .row > .row > .column-gap-1 {
+      display: none;
+    }
+
+    .row > .column-gap-2 {
+      display: none;
+    }
+
+    .row > .column-gap-3 {
+      display: none;
+    }
+
+    .row > .column-gap-4 {
+      display: none;
+    }
+
+    .row > .column-gap-5 {
+      display: none;
+    }
+
+    .row > .column-gap-6 {
+      display: none;
+    }
+
+    .row > .column-gap-7 {
+      display: none;
+    }
+}

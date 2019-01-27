@@ -1,0 +1,146 @@
+body {
+    background-color: grey;
+}
+
+a {
+    color: #292a2b;
+    text-decoration: none;
+}
+
+h1 > a:hover {
+    color: #293c6b;
+}
+
+img {
+    height: 30px;
+    width: 30px;
+}
+
+#session:hover {
+    background-color: #5e0710;
+    color: lightgrey;
+}
+
+#break:hover {
+    background-color: #5e0710;
+    color: lightgrey;
+}
+
+.title_wrapper {
+    margin-top: 100px;
+}
+
+.title_wrapper > h1 {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+    color: #8e0c19;
+    text-shadow: 1px 1px black;
+    margin-bottom: 20px;
+}
+
+#description {
+    font-size: 20px;
+    font-weight: normal;
+    font-style: italic;
+    color: #292a2b;
+    text-shadow: none;
+}
+
+.interval_wrapper {
+    margin: 0 auto;
+    width: 35%;
+    height: 75px;
+    background-color: black;
+}
+
+.left_interval {
+    width: 50%;
+    float: left;
+    height: inherit;
+}
+
+.left_interval > p {
+    color: white;
+    text-align: center;
+}
+
+.right_interval {
+    width: 50%;
+    float: right;
+    height: inherit;
+}
+
+.right_interval > p {
+    color: white;
+    text-align: center;
+}
+
+.timer_wrapper {
+    margin: 25px auto 0px auto;
+    width: 35%;
+    height: 175px;
+    background-color: black;
+}
+
+.timer_wrapper > h4 {
+    color: white;
+    text-align: center;
+}
+
+.timer_wrapper > p {
+    color: white;
+    text-align: center;
+}
+
+#timer {
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    padding-top: 40px;
+}
+
+.left_button {
+    float: left;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.right_button {
+    float: right;
+    margin-top: 20px;
+    margin-right: 50px;
+}
+
+#session {
+    background-color: #8e0c19;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    border: none;
+}
+
+#break {
+    background-color: #8e0c19;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    border: none;
+}
+
+.left_interval > p {
+    margin: 20px auto 0px auto;
+}
+
+.right_interval > p {
+    margin: 20px auto 0px auto;
+}
+
+.logo_wrapper {
+    display: inline;
+    margin: 0 auto;
+    background-color: #8e0c19;
+    border-radius: 30px;
+    padding: 5px 7px 5px 7px;
+}

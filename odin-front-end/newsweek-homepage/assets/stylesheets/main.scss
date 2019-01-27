@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+/* variables */
+
+$sans-serif: "Source Sans Pro", Arial, Helvetica, sans-serif;
+$serif: Georgia, Times, serif;
+$category-color: #FF0500;
+
+/* mixins */
+
+@mixin category-title($font-size) {
+  font-weight: bold;
+  color: $category-color;
+  font-size: $font-size;
+  text-transform: uppercase;
+}
+
+/* essentials */
+
+body {
+  font-family: $sans-serif;
+}
+
+p {
+  font-family: $serif;
+  font-size: 1.25em;
+  text-align: center;
+}
+
+h1, h2, h3, h4 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+h2 {
+  @include category-title(22px);
+}
+
+h3 {
+  font-weight: bold;
+}
+
+h4 {
+  @include category-title(16px);
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+li {
+  list-style-type: square;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+/* navbar */
+
+.navbar {
+  width: 100%;
+  background-color: black;
+}
+
+.nav, .navbar-nav {
+  li {
+    a {
+      text-transform: uppercase;
+    }
+  }
+}
+.navbar-inverse, .navbar-collapse {
+    background-color: black;
+    border-bottom: 1px solid white;
+}
+
+.navbar-right {
+  margin-right: 15px;
+}
+
+.main {
+  margin-bottom: 25px;
+  li {
+    text-align: center;
+  }
+}
+
+.secondary {
+  li {
+    text-align: center;
+  }
+}
+
+/* in the magazine */
+
+.in-the-mag {
+  font-size: 19px;
+  font-family: $serif;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+.in-the-mag-divider {
+  border-bottom: 3px solid $category-color;
+  margin-bottom: 20px;
+}
+
+/* big shots */
+
+.big-shots {
+  background-color: #282828;
+  .container {
+    margin-bottom: 50px;
+  }
+}
+
+.this-week {
+
+}
+
+.most-read {
+  border-left: 1px solid lightgrey;
+  padding-left: 2.5%;
+  h3 {
+    text-align: left;
+    border-bottom: 5px solid $category-color;
+  }
+  ul {
+    padding-left: 0;
+    li {
+      list-style: none;
+      clear: both;
+      margin-top: 10px;
+      img {
+        width: 40%;
+        float: left;
+        margin-bottom: 10px;
+        margin-right: 2.5%;
+      }
+      span {
+        float: right;
+        width: 57.5%;
+      }
+    }
+  }
+}
+
+/* footer */
+
+.footer {
+  background-color: #181818;
+  border-top: 5px solid $category-color;
+  margin-top: 50px;
+  padding-bottom: 50px;
+  ul {
+    padding-left: 0;
+    li {
+      list-style-type: none;
+    }
+  }
+  .links {
+    ul {
+      li {
+        color: white;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .issues {
+    div {
+      li {
+        color: white;
+        font-weight: bold;
+        margin: 10px 0;
+      }
+      ul {
+        li {
+          font-weight: normal;
+          color: grey;
+          margin-bottom: 5px;
+          margin-top: 0;
+        }
+      }
+    }
+  }
+  .footer-button {
+    margin-top: 15px;
+  }
+}

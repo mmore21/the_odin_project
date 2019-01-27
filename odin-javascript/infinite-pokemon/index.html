@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pokémon Database</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="assets/stylesheets/main.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Pokémon Finder</h1>
+    <form id="search">
+      <label>Enter Pokémon Name (All Lower Case):</label>
+      <input class="form-control" name="name" type="text"></input>
+      <button class="btn btn-primary btn-block">Search</button>
+    </form>
+    <div class="results">
+      <div class="name"></div>
+      <div class="id"></div>
+      <div class="generation"></div>
+      <div class="image"></div>
+    </div>
+    <div class="error"></div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="assets/scripts/main.js"></script>
+</body>
+</html>

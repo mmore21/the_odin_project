@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+}
+
+/* navbar */
+
+.navbar {
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 14px;
+  position: relative;
+  width: 845px;
+  height: 36px;
+  margin: 0 auto;
+  top: 18px;
+  background: grey; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(grey, #4c4c4c); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(grey, #4c4c4c); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(grey, #4c4c4c); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(grey, #4c4c4c); /* Standard syntax */
+  border-radius: 3px;
+}
+
+.navbar > ul {
+  height: inherit;
+}
+
+.navbar > ul > li {
+  display: inline-block;
+  vertical-align: middle;
+  height: inherit;
+  width: 11%;
+  padding-top: 10px;
+}
+
+.navbar > ul > li:first-child {
+  padding-top: 5px;
+}
+
+.navbar > ul > li > img {
+  max-height: 25px;
+  max-width: 25px;
+  vertical-align: middle;
+}
+
+.navbar > ul > li:not(:last-child) {
+  border-right: 1px solid #515151;
+  padding-left: 1px;
+}
+
+.navbar > ul > li:not(:last-child):hover {
+  background-color: darkgrey;
+}
+
+.navbar > ul > li:last-child {
+  width: 8%;
+  padding-top: 8px;
+}
+
+.navbar > ul > li > input {
+  width: 75%;
+  border-style: none;
+  border-top: 1px solid black;
+  border-bottom: 1px solid #8e8e8e;
+  border-radius: 10px;
+  background-color: inherit;
+  color: white;
+  padding-left: 5px;
+}
+
+/* banner */
+
+.banner {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  text-align: center;
+  width: 100%;
+  height: 100px;
+  background-image: url('../images/background.jpg');
+  background-position: 50% 100%;
+  width: 1440px;
+  height: 682px;
+  margin: 0 auto;
+  margin-bottom: 3px;
+}
+
+.banner > h1 {
+  font-size: 60px;
+  margin-top: 200px;
+}
+
+.banner > h2 {
+  font-size: 30px;
+  line-height: 40px;
+  width: 55%;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.banner > h3 {
+  font-size: 24px;
+  margin-top: 30px;
+}
+
+.banner > h3 > span:hover {
+  border-bottom: 0.5px solid white;
+}
+
+/* thumbnails */
+
+.thumbnails {
+  margin: 0 auto;
+  width: 1440px;
+}
+
+.thumbnails > div {
+  text-align: center;
+  width: inherit;
+}
+
+.thumbnails > div > img {
+  display: inline-block;
+  width: 24.9%;
+  height: 200px;
+  margin: -1px;
+}
+
+/* footer */
+
+.footer {
+  margin: 0 auto;
+  margin-top: 20px;
+  font-family: 'Droid Sans', sans-serif;
+  width: 980px;
+  color: #6e6e6e;
+  font-size: 10px;
+}
+
+.footer > ul > li {
+  display: inline-block;
+  padding-left: 3px;
+  line-height: 18px;
+
+}
+
+.footer > ul > li:not(:last-child) {
+  border-right: 1px solid lightgrey;
+  padding-right: 6px;
+}
+
+.footer > ul > li > a > img {
+  vertical-align: middle;
+}
+
+.footer a {
+  color: #08c;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer > p:first-child {
+  margin-bottom: 20px;
+}
+
+/* float */
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-clear {
+  clear: both;
+}

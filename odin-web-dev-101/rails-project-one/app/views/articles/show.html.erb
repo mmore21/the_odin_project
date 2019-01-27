@@ -1,0 +1,40 @@
+<div class="container">
+    <h2>
+        <%= @article.title %>
+    </h2>
+    <p class="article_date"><%= @article.created_at.strftime("Posted %B %d, %Y at %l:%M%P") %></p>
+    </div>
+<div class="article_body">
+<div class="article">
+    <div class="article_text">
+        <p><strong>Tags:</strong>
+            <% @article.tags.each do |tag| %>
+                <%= link_to tag.name, tag_path(tag), class: "button" %>
+            <% end %>
+        </p>
+        <%= @article.body %>
+
+        <p>
+            <% if @article.image.exists? %>
+                <%= image_tag @article.image.url %>
+            <% end %>
+        </p>
+
+        <hr>
+
+        <h3>Comments (<%= @article.comments.size %>)</h3>
+        <%= render partial: 'articles/comment', collection: @article.comments %>
+        <hr>
+        <%= render partial: 'comments/form' %><br />
+
+            <%= link_to "Back to Articles List", articles_path, :class => "button" %>
+            <% if logged_in? %>
+            <%= link_to "Edit", edit_article_path(@article), :class => "button" %>
+            <%= link_to "Delete", article_path(@article), method: :delete, data: { confirm: 'Are you sure?' }, :class => "button" %>
+            <% end %>
+        <br /><br /><br />
+
+        <em><%= "This page has #{@article.impressionist_count} views." %></em>
+        </div>
+    </div>
+</div>

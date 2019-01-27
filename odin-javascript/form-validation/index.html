@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Validation</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="assets/stylesheets/main.css">
+</head>
+<body>
+  <form id="important-form">
+    <fieldset>
+      <h1 class="text-center">Important Form</h1>
+      <label for="name">* Name:</label>
+      <input class="form-control" id="name" type="text" required>
+      <br />
+      <label for="email">* Email:</label>
+      <input class="form-control" id="email" type="email" required></input>
+      <br />
+      <label for="pw1">* Password:</label>
+      <input class="form-control" id="pw1" type="password" required>
+      <br />
+      <label for="pw2">* Password Confirmation:</label>
+      <input class="form-control" id="pw2" type="password" required>
+      <br />
+      <p><input id="agree" type="checkbox" required> Agree to Terms of Service *</p>
+      <button class="btn btn-primary btn-block">Submit</button>
+    </fieldset>
+  </form>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
+  <script src="assets/scripts/main.js"></script>
+</body>
+</html>

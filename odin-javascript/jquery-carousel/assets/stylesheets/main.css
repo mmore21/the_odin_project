@@ -1,0 +1,43 @@
+img {
+	display: none;
+	margin: 0 auto;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+.header {
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.header > h1 {
+	font-size: 36px;
+	margin:15px 0;
+}
+
+.buttons {
+	text-align: center;
+	margin-top: 15px;
+	font-size: 30px;
+}
+
+.pointers {
+	margin-top: 15px;
+	text-align: center;
+}
+
+.pointers > p > span {
+	display: inline-block;
+	font-size: 50px;
+}
+
+.pointers > p > span:first-child {
+	margin-right: 10px;
+}
+
+.pointers > p > span:last-child {
+	margin-left: 10px;
+}

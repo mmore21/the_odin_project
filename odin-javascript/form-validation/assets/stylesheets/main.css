@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+fieldset {
+  width: 25%;
+  margin: 40px auto;
+  border: 1px solid lightgrey;
+  padding: 30px 50px;
+}
+
+input {
+  display: block;
+  margin: 0 0 10px 0;
+}
+
+input[type="checkbox"] {
+  display: inline-block;
+}
+
+button {
+  margin-top: 5px;
+}
+
+label.error {
+  color: red;
+}
+
+input.error {
+  background-color: #FFE5E5;
+}
+
+.custom-error {
+  color: red;
+}

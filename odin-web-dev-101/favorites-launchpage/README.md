@@ -1,0 +1,1 @@
+Created using HTML, CSS, Bootstrap, JavaScript, and jQuery. I do not own any of these images created. This project is for personal / educational use.
