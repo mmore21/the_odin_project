@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+
+    div.navbar.navbar-dark.bg-dark.box-shadow
+      div.container.d-flex.justify-content-between
+        a(class='navbar-brand' href='/') Home
+        a(class='navbar-brand' href='about') About
+        a(class='navbar-brand' href='contact-me') Contact
+
+    div.container.mt-4
+      block content
