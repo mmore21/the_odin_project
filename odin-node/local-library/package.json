@@ -13,17 +13,17 @@
     "async": "^3.1.0",
     "compression": "^1.7.4",
     "cookie-parser": "~1.4.4",
-    "debug": "~2.6.9",
-    "express": "~4.16.1",
-    "express-validator": "^6.1.1",
-    "helmet": "^3.18.0",
-    "http-errors": "~1.6.3",
+    "debug": "~4.1.1",
+    "express": "~4.17.1",
+    "express-validator": "^6.3.0",
+    "helmet": "^3.21.2",
+    "http-errors": "~1.7.3",
     "moment": "^2.24.0",
-    "mongoose": "^5.6.4",
+    "mongoose": "^5.7.13",
     "morgan": "~1.9.1",
     "pug": "^2.0.4"
   },
   "devDependencies": {
-    "nodemon": "^1.19.1"
+    "nodemon": "^2.0.1"
   }
 }
