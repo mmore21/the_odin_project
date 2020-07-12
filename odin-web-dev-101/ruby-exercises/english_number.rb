@@ -1,4 +1,4 @@
-def englishNumber number
+def english_number number
     if number < 0
         return 'Please enter a number that isn\'t negative.'
     end
@@ -20,7 +20,7 @@ def englishNumber number
 
     left = number
 
-# 1,000,000,000
+	# 1,000,000,000
     write = left/1000000000
     left = left - write*1000000000
 
@@ -32,7 +32,7 @@ def englishNumber number
         end
     end
 
-# 1,000,000
+	# 1,000,000
     write = left/1000000
     left = left - write*1000000
 
@@ -44,7 +44,7 @@ def englishNumber number
         end
     end
 
-# 1,000
+	# 1,000
     write = left/1000
     left = left - write*1000
 
@@ -57,7 +57,7 @@ def englishNumber number
     end
     
 
-# 100
+	# 100
     write = left/100
     left = left - write*100
     

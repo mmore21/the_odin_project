@@ -15,7 +15,7 @@ class OrangeTree
     end
 
     # ages the year one year upon being called
-    def self.oneYearPasses
+    def self.one_year_passes
         orangesDie = 'The winter has passed and all of the oranges from last year died.'
         @@age += 1
         @@height += 3
@@ -36,12 +36,12 @@ class OrangeTree
     end
 
     # returns the amount of oranges on tree
-    def self.countTheOranges
+    def self.count_the_oranges
         puts 'There are currently ' + @@oranges.to_s + ' oranges on your tree.'
     end
 
     # reduces orange count by one
-    def self.pickAnOrange
+    def self.pick_an_orange
         if @@oranges > 0
             @@oranges -= 1
             puts 'Yum, that orange was delicious!'
@@ -53,42 +53,42 @@ class OrangeTree
 
     def self.commands
         puts 'height'
-        puts 'oneYearPasses'
-        puts 'countTheOranges'
-        puts 'pickAnOrange'
+        puts 'one_year_passes'
+        puts 'count_the_oranges'
+        puts 'pick_an_orange'
     end
 end
 
 OrangeTree.new
 
 # defines a function that gets user input and returns it
-def userEntry
+def user_entry
     puts 'Type the command you want to run below.'
-    getString = gets.chomp
-    return getString
+    entry = gets.chomp
+    return entry
 end
 
 linebreak = '-----------------------------------------------------'
-entry = userEntry
+entry = user_entry
 while entry != 'exit'
     if entry == 'height'
         puts linebreak
         OrangeTree.height()
         puts linebreak
         puts
-    elsif entry == 'oneYearPasses'
+    elsif entry == 'one_year_passes'
         puts linebreak
-        OrangeTree.oneYearPasses()
-        puts linebreak
-        puts
-    elsif entry == 'countTheOranges'
-        puts linebreak
-        OrangeTree.countTheOranges()
+        OrangeTree.one_year_passes()
         puts linebreak
         puts
-    elsif entry == 'pickAnOrange'
+    elsif entry == 'count_the_oranges'
         puts linebreak
-        puts OrangeTree.pickAnOrange()
+        OrangeTree.count_the_oranges()
+        puts linebreak
+        puts
+    elsif entry == 'pick_an_orange'
+        puts linebreak
+        puts OrangeTree.pick_an_orange()
         puts linebreak
         puts
     elsif entry == 'commands'
@@ -102,5 +102,5 @@ while entry != 'exit'
         puts linebreak
         puts
     end
-    entry = userEntry
+    entry = user_entry
 end

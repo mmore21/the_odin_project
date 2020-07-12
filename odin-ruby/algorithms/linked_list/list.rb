@@ -13,7 +13,7 @@ class LinkedList
 
   def initialize(list=[])
     @list = []
-    # adds items from given array to list unless already empty
+    # Adds items from given array to list unless already empty
     unless list.empty?
       list.each do |item|
         append(item)
@@ -98,21 +98,20 @@ class LinkedList
   end
 end
 
-# create new object
+def main():
 list = LinkedList.new([1,2])
 
-# UNCOMMENT ANY OF THE METHODS BELOW TO TEST
-# list.append(5)
-# list.prepend(9)
-# puts list
-# puts list.size
-# puts list.head
-# puts list.tail
-# puts list.at(0)
-# list.pop
-# list.to_s
-# puts list.contains?(8)
-# puts list.contains?(2)
-# list.insert_at(1,6)
-# list.remove_at(1)
-# p.list
+list.append(5)
+list.prepend(9)
+puts list
+puts list.size
+puts list.head
+puts list.tail
+puts list.at(0)
+list.pop
+list.to_s
+puts list.contains?(8)
+puts list.contains?(2)
+list.insert_at(1,6)
+list.remove_at(1)
+p.list
